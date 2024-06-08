@@ -20,6 +20,19 @@ class MyApp extends StatelessWidget {
               bodyColor: textcolor,
               displayColor: textcolor,
             ),
+            bottomSheetTheme: const BottomSheetThemeData(
+              backgroundColor: Colors.transparent,
+            ),
+            elevatedButtonTheme: ElevatedButtonThemeData(
+              style: ElevatedButton.styleFrom(
+                minimumSize: const Size(
+                  double.infinity,
+                54,),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)
+                ),
+              )
+            ),
         useMaterial3: true,
       ),
       home: const SplashPage(),
